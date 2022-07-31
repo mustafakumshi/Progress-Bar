@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e0e4ed;
+}
+
+.frame {
+  width: 22rem;
+  height: 91px;
+  background: white;
+  box-shadow: 12px 11px 20px #0000000f;
+  border-radius: 21px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0px 12px;
+  position: relative;
+}
+
+.logo {
+  width: 62px;
+  height: 62px;
+  background: #fe8a91;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 20px #fd4e864f;
+}
+
+.logo img {
+  width: 52px;
+}
+
+.title-p {
+  position: absolute;
+  top: 3px;
+  left: 89px;
+  font-size: 21px;
+  font-family: cursive;
+  font-weight: 600;
+  color: #5a5a5a;
+}
+
+.size-file {
+  width: 15rem;
+  position: absolute;
+  right: 23px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.size-file p {
+  font-size: 14px;
+  color: #767676;
+  font-family: cursive;
+  font-weight: 600;
+}
+
+.loading {
+  position: absolute;
+  left: 89px;
+  top: 67px;
+  display: flex;
+  align-items: center;
+}
+
+.loading::after {
+  content: "";
+  position: absolute;
+  width: 0rem;
+  height: 13px;
+  background: linear-gradient(90deg, #fecfc8, #fe818a);
+  border-radius: 23px;
+  animation: anim 1s forwards ease-in-out;
+}
+
+.loading::before {
+  content: "";
+  width: 15rem;
+  height: 6px;
+  background: #b5b5b58c;
+  border-radius: 12px;
+  position: absolute;
+}
+
+@keyframes anim {
+  100% {
+    width: 9rem;
+  }
+}
